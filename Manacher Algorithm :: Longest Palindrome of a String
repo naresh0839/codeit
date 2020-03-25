@@ -43,3 +43,6 @@ void solve(string &s){
 		cout << s.substr(even-M, 2*M);
 	}
 }
+
+
+// https://cp-algorithms.com/string/manacher.html
