@@ -1,0 +1,31 @@
+vector<int> g[max], gt[max];
+vector<bool> visit;
+vector<int> order, component;
+void dfs1(int i){
+    visit[i]=true;
+    for(auto j: g[i]){
+    	if(!visit[j]){
+    		dfs1(j);
+    	}
+    }
+    order.push_back(i);
+}
+void dfs2(int i){
+    visit[i]=true;
+    component.push_back (i);
+	temp=min(temp, cost[i]);
+    for(auto j: gt[i]){
+    	if(!visit[j]){
+    		dfs2(j);
+    	}
+    }
+}
+
+1st step. Run sequence of depth first search of graph G which will return vertices with increasing exit
+time tout, i.e. some list order.
+
+2nd step. Build transposed graph GT. Run a series of depth (breadth) first searches in the order determined
+by list order (to be exact in reverse order, i.e. in decreasing order of exit times). Every set of vertices,
+reached after the next search, will be the next strongly connected component.
+
+Algorithm asymptotic is O(n+m), because it is just two depth (breadth) first searches.
