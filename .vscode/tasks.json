@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "shell: g++.exe build active file",
+			"command": "",
+			"args": [
+				"g++",
+				"${relativeFile}",
+				"-o",
+				"{file}",
+				"&&",
+				"./{file}",
+				"<",
+				"input.txt",
+				">",
+				"output.txt",
+			],
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
