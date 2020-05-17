@@ -2,7 +2,7 @@
 settings.json
 
 # Don't add .txt files.
-test.cpp
+test*.cpp
 
 # Don't add .txt files.
 *.txt
