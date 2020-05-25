@@ -8,7 +8,7 @@ struct Edge {
     }
 }edges[MAXN];
 
-int n, m; 
+int n, m, cost = 0; 
 vector<int> tree_id(MAXN);
 vector<Edge> result;
 
@@ -37,8 +37,6 @@ int main(){
     }    
     return 0;
 }
-int cost = 0;
-
 
 
 
