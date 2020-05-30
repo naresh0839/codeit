@@ -1,44 +1,55 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define MAXN 100005
+
 struct Edge {
     int u, v, weight;
     bool operator<(Edge const& other) {
         return weight < other.weight;
     }
-}edges[MAXN];
+} edges[MAXN];
+//
 
-int n, m, cost = 0; 
+int n, m, cost = 0;
 vector<int> tree_id(MAXN);
 vector<Edge> result;
 
-int main(){
+// HELP OF DSU DATA STRUCTURE
+int parent[MAXN], size[MAXN];
+void make_set(int v) {
+    parent[v] = v;
+    size[v] = 0;
+}
+int find_set(int v) {
+    return (parent[v] == v ? v : parent[v] = find_set(parent[v]));
+}
+void union_set(int a, int b) {
+    a = find_set(a);
+    b = find_set(b);
+    if (a != b) {
+        if (size[b] < size[a]) swap(a, b);
+        parent[b] = a;
+        size[a] += size[b];
+    }
+}
+
+int main() {
     cin >> n >> m;
     // n == number of vertices
     // m == no of edges in graph
-    for(int i = 0; i < m; ++i){
+    for (int i = 0; i < m; ++i) {
         cin >> edges[i].u >> edges[i].v >> edges[i].weight;
     }
     sort(edges, edges + m);
-    for (int i = 0; i < n; i++){
+    for (int i = 1; i <= n; i++) {
         tree_id[i] = i;
     }
-    for (Edge e : edges) {
-        if (tree_id[e.u] != tree_id[e.v]) {
-            cost += e.weight;
-            result.push_back(e);
-            
-            int old_id = tree_id[e.u], new_id = tree_id[e.v];
-            for (int i = 0; i < n; i++) {
-                if (tree_id[i] == old_id)
-                    tree_id[i] = new_id;
-            }
-        }
-    }    
+    for (int i = 0; i < m; i++) {
+        int a = edges[i].u, b = edges[i].v;
+        if (find_set(a) == find_set(b)) continue;
+        result.push_back(edges[i]);
+        union_set(a, b);
+    }
+
     return 0;
 }
-
-
-
-
-
