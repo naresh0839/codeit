@@ -1,7 +1,7 @@
 # Don't add settings.json file.
 settings.json
 
-# Don't add .txt files.
+# Don't add test files.
 test*.cpp
 
 # Don't add .txt files.

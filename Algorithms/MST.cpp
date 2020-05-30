@@ -8,6 +8,7 @@ struct Edge {
         return weight < other.weight;
     }
 } edges[MAXN];
+//
 
 int n, m, cost = 0;
 vector<int> tree_id(MAXN);
