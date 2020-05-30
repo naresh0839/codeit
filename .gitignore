@@ -10,6 +10,9 @@ test*.cpp
 # Prerequisites
 *.d
 
+# Compiling File
+{file}
+
 # Compiled Object files
 *.slo
 *.lo
