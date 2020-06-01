@@ -50,6 +50,10 @@ int main() {
         result.push_back(edges[i]);
         union_set(a, b);
     }
+<<<<<<< HEAD
     // commit
+=======
+
+>>>>>>> fb67aa84c2b7385b90ee401db9748380f0dc8b13
     return 0;
 }
