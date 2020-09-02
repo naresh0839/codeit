@@ -1,3 +1,6 @@
+# Don't add c_cpp_properties.json file
+c_cpp_properties.json
+
 # Don't add settings.json file.
 settings.json
 
