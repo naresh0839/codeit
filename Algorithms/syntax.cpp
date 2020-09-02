@@ -13,6 +13,7 @@ using namespace std;
 #define mem0(a) memset(a, 0, sizeof(a))
 #define mem1(a) memset(a, -1, sizeof(a))
 #define trav(a, x) for (auto &a : x)
+#define endl '\n'
 #define fi first
 #define se second
 #define pb push_back
@@ -23,13 +24,9 @@ using namespace std;
 const int INF = 1e18;
 typedef pair<int, int> pii;
 
-void rewind() {
-}
 signed main() {
     boostIO;
-    int t = 1;
-    // cin >> t;
-    while (t--) rewind();
+
     return 0;
 }
 // XD

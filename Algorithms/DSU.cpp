@@ -14,10 +14,10 @@ using namespace std;
 #define MOD 1000000007
 
 struct DSU {
-    int parent[MAXN], size[MAXN];
+    int parent[MAXN], siz[MAXN];
     void make_set(int v) {
         parent[v] = v;
-        size[v] = 1;
+        siz[v] = 1;
     }
     int find_set(int v) {
         if (v == parent[v]) return v;
@@ -27,10 +27,10 @@ struct DSU {
         a = find_set(a);
         b = find_set(b);
         if (a != b) {
-            if (size[b] < size[a])
+            if (siz[b] < siz[a])
                 swap(a, b);
             parent[b] = a;
-            size[a] += size[b];
+            siz[a] += siz[b];
         }
     }
 };
