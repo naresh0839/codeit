@@ -1,6 +1,9 @@
 # Don't add settings.json file.
 settings.json
 
+# Don't add c_cpp_properties file bcz of window and ubuntu
+c_cpp_properties.json
+
 # Don't add test files.
 test*.cpp
 
