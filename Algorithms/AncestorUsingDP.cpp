@@ -62,7 +62,7 @@ void rewind() {
     repn(j, 19)
         repn(i, n)
             dp[i][j] = dp[dp[i][j - 1]][j - 1];
-
+    
     int x, y;
     cin >> x >> y;
     cout << lca(x, y) << endl;  // lca of x and y
