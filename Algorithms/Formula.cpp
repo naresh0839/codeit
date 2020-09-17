@@ -18,6 +18,15 @@ int xap(int x, int a, int p) {
     return half;
 }
 
+// ncr mod p function
+int ncr(int n, int i) {
+    int res = fac[n], div = fac[n - i] * fac[i];
+    div %= mod;
+    div = xap(div, mod - 2);
+    res = (res * div) % mod;
+    return res;
+}
+
 // Seive Function
 
 int sp[MAXN + 1];
