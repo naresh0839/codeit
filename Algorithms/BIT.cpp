@@ -7,15 +7,15 @@ struct BIT {
     }
     void build(vector<int> &a) {
         for (size_t i = 0; i < a.size(); i++)
-            add(i, a[i]);
+            update(i, a[i]);
     }
-    void add(int idx, int val) {
+    void update(int idx, int val) {
         for (++idx; idx < n; idx += idx & -idx)
             bit[idx] += val;
     }
-    void range_add(int l, int r, int val) {
-        add(l, val);
-        add(r + 1, -val);
+    void range_update(int l, int r, int val) {
+        update(l, val);
+        update(r + 1, -val);
     }
     int point_query(int idx) {
         int ret = 0;
