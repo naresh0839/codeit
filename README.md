@@ -1,2 +1,3 @@
 # codeit
-Problem Solutions
+
+Competitive Programming Algorithms
