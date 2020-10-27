@@ -19,6 +19,11 @@ using namespace std;
 #define int long long
 #define debug(...) fprintf(stderr, __VA_ARGS__), fflush(stderr)
 #define time__(d) for (long blockTime = 0; (blockTime == 0 ? (blockTime = clock()) != 0 : false); debug("%s time : %.4fs", d, (double)(clock() - blockTime) / CLOCKS_PER_SEC))
+<<<<<<< HEAD
+=======
+#define mod 1000000007
+#define rem 998244353
+>>>>>>> 0963751bc395d66dd58698eae09cfebcdc3242c0
 #define maxn 500005
 #define mod 1000000007
 #define N 1005
