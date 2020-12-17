@@ -100,3 +100,8 @@ bool isSubsetSum(vector<int> &set, int n, int sum) {
     }
     return subset[n][sum];
 }
+
+// Regarding GCD
+
+suppose you have a linear array and a[i] <= 10^12
+then number of distinct values of gcd(all subarrays ending on r) is log2(10^12)  
