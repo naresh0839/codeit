@@ -105,3 +105,43 @@ bool isSubsetSum(vector<int> &set, int n, int sum) {
 
 suppose you have a linear array and a[i] <= 10^12
 then number of distinct values of gcd(all subarrays ending on r) is log2(10^12)  
+
+// for finding the next permutation of an array or a string
+
+just find the largest suffix which is decreasing if whole string is decreasing then 
+it next permutation is sorted one of itself else just replace a[startSuffix - 1] with
+its next bigger in suffix part and reverse the suffix or sort the suffix because it wiil be minimum with the next character replaced
+
+// for finding the last permutation of an array or a string 
+
+just find the largest suffix which is increasing if whole string is increasing then 
+it previous permutation is sorted one of itself in descending order else just replace a[startSuffix - 1] with
+its first smaller in suffix part and reverse the suffix or sort the suffix decreasingly because it wiil be maximum with the next character replaced
+
+
+// for finding the nth fibonacci using matrix exponentiation
+
+Method I :: 
+Let matrix X = {{1, 1}, {1, 0}} to the nth power matrix be Y
+then Y[0][0] will represent Fib(n + 1)
+
+Method II :: 
+F(2n) = F(n)[2*F(n+1) – F(n)]
+F(2n + 1) = F(n)2 + F(n+1)2
+
+
+// if a and b are coprime then gcd(a + b, a * b) is 1
+
+
+/* 
+int n;
+cin >> n;
+int cnt = 0;
+for (int i = 0; i < (1 << n); i++) {
+    for (int j = i; j; j = (j - 1) & i) {
+        cnt++;
+    }
+}
+cout << cnt << endl;
+// cnt is almost 387158345 for n = 18
+*/ 

@@ -4,8 +4,6 @@ using namespace std;
     ios_base::sync_with_stdio(0); \
     cin.tie(0);                   \
     cout.tie(0)
-#define maxn 100005
-
 void merge(int a[], int b[], int start, int mid, int end) {
     int ptrl = start, ptrr = mid + 1, cur = start;
     while (ptrl <= mid and ptrr <= end) {

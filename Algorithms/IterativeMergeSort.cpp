@@ -6,6 +6,8 @@ using namespace std;
     cout.tie(0)
 #define maxn 100005
 
+int n;
+
 void merge(int a[], int b[], int start, int mid, int end) {
     int ptrl = start, ptrr = mid + 1, cur = start;
     while (ptrl <= mid and ptrr <= end) {
@@ -23,22 +25,20 @@ void merge(int a[], int b[], int start, int mid, int end) {
         a[i] = b[i];
     }
 }
-void merge_sort(int a[], int b[], int start, int end) {
-    if (start >= end) return;
-    int mid = (start + end) / 2;
-    merge_sort(a, b, start, mid);
-    merge_sort(a, b, mid + 1, end);
-    merge(a, b, start, mid, end);
-}   
 signed main() {
     boostIO;
-    int n;
     cin >> n;
     int a[n], b[n];
     for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
-    merge_sort(a, b, 0, n - 1);
+    for (int sz = 1; sz < n; sz *= 2) {
+        for (int start = 0; start < n - 1; start += 2 * sz) {
+            int mid = min(l + sz - 1, n - 1);
+            int end = min(l + 2 * sz - 1, n - 1);
+            merge(a, b, start, mid, end); 
+        }
+    }
     for (int i = 0; i < n; i++) {
         cout << a[i] << " ";
     }
