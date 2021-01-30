@@ -1,5 +1,5 @@
 ### Lab Task - 2: Part-of-Speech Tagging, Chunking and Named Entity Recognition using CRF++
-======================
+---
 
 * We have modelled all of them against three templates and tested it and saved the results in respective files.
 * After this from each result we have tried to calculate the accuracy using python, numpy, pandas.
