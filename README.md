@@ -1,8 +1,4 @@
-# codeit
-
-Competitive Programming Algorithms
-
-Here, the *POS tagging, Named Entity Recognition(NER) and Chunking* of the given respective dataset is done using CRF++ tool. 
+### Lab Task - 2: Part-of-Speech Tagging, Chunking and Named Entity Recognition using CRF++
 
 * We have modelled all of them against three templates and tested it and saved the results in respective files.
 * After this from each result we have tried to calculate the accuracy using python, numpy, pandas.
@@ -30,7 +26,7 @@ python3 accuracy_code.py > accuracy.txt
 - You will get your accuracy of data in accuracy.txt file.
 
 ### Results we got after training and testing of data are as follows:
----
+
 * Chunking: Accuracies of 96.05074299223236, 95.78478554542384, 95.75523471800066 respectively
 
 * POS_tagging: Accuracies of 62.51477541371159, 92.84025667004391, 92.99645390070921 respectively
