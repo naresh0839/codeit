@@ -16,17 +16,17 @@ $ crf_learn <template file> <train file> <model file name to be given>
 $ crf_test -m <model file> <test file> > result.txt
 ```
 
-> Here, '>' is used for storing the output after testing of data in result file
+> Here, '>' is used for storing the output after testing of data in result file.
 
-## Now run the following commmand to get accuracy.txt file
+### Now run the following commmand to get accuracy.txt file
 ```
 $ python3 accuracy_code.py > accuracy.txt
 ```
 
 ### Results we got after training and testing of data are as follows:
 
-* Chunking: Accuracies of 96.05074299223236, 95.78478554542384, 95.75523471800066 respectively
+* **Chunking**: Accuracies of 96.05082635033877, 95.64978787175211, 95.72155265213078 respectively
 
-* POS_tagging: Accuracies of 62.51477541371159, 92.84025667004391, 92.99645390070921 respectively
+* **POS_tagging**: Accuracies of 94.47200118200814, 93.24988918673618, 93.47784790088018 respectively
 
-* NER: Accuracies of 95.59299687845358, 94.21641429319271, 95.30216957170832 respectively.
+* **NER**: Accuracies of 96.75830780565357, 96.61095816045601, 96.76412423901664 respectively.
