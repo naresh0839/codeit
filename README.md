@@ -1,5 +1,5 @@
 ### Lab Task - 2: Part-of-Speech Tagging, Chunking and Named Entity Recognition using CRF++
----
+======================
 
 * We have modelled all of them against three templates and tested it and saved the results in respective files.
 * After this from each result we have tried to calculate the accuracy using python, numpy, pandas.
@@ -13,20 +13,15 @@ $ crf_learn <template file> <train file> <model file name to be given>
 
 ### Command to test data:
 ```
-crf_test -m <model file> <test file> > result.txt
+$ crf_test -m <model file> <test file> > result.txt
 ```
 
-_
-bash
-crf_test -m <model file> <test file> > result.txt 
- 
-- (Here, > used for storing the result after testing of data in result file)
+> Here, '>' is used for storing the output after testing of data in result file
 
-Then , run,
-bash
-python3 accuracy_code.py > accuracy.txt
-
-- You will get your accuracy of data in accuracy.txt file.
+## Now run the following commmand to get accuracy.txt file
+```
+$ python3 accuracy_code.py > accuracy.txt
+```
 
 ### Results we got after training and testing of data are as follows:
 
