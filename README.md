@@ -1,4 +1,6 @@
-# Morphological Generation/Inflection
+# Lab Task-6: Isolated Word Morphological Generation.
+
+## Morphological Generation/Inflection
 
 > A morpheme is the smallest meaningful word in a sentence or a phrase in any language. In well-spaced sentences, Morphological Analysis(MA) is the first step in Neuro-Linguistic Programming(NLP) in which a sentence is divided into a sequence of morphemes and then we determine parts of speech of the segmented morpheme. 	Morphological generation is just inverse of Morphological analysis. Morphlogical inflection Generation is the task of generating the inflected form of a given lemma corresponding to a particular lingusitic transformation. It is a mechnaism of word formation to express different grammatical categories such as tense, mood, voice, aspect, person, gender, number etc. Here, we are doing morphological generation/inflection for only single language at a time.
 
@@ -22,7 +24,7 @@
 - `Step 3`: Use colab to work faster and efficiently.
 - `Step 4`: Open a new notebook in colab and upload respective language datasets for training, testing and high/low resource and edit file_name variable to respective high low, test file to respective test file name.
 - `Step 5`: Go to line number 616 617 618 where comment (s2s = torch.load('saved.pt')) this line and uncomment the the above two train and save statements.
-- `Step 6`: Run this code , after 30 Epochs u will get two graphs for Loss and Accuracy and actual prediction data.
+- `Step 6`: Run this code, after 30 Epochs u will get two graphs for Loss and Accuracy and actual prediction data.
 - `Step 7`: You will get test accuracy printed at second last line in ouput.
 
 ## Folder Structure:
@@ -34,18 +36,18 @@
 
 - *For Hindi* with high resource: 
 
-	- we get Avg_TrainAccuracy: 0.987051 and test accuracy as 0.9183067448762109 .
+	- we get Avg_TrainAccuracy: *0.983710*
 
 - *For Bengali* with low resource :
 
-	- We get Avg_TrainAccuracy: 0.952591 and test accuracy as 0.9208812886459944 .
+	- We get Avg_TrainAccuracy: *0.959097*
 
 - *For German* with high resource:
 
-	- we get Avg_TrainAccuracy: 0.950101 and test accuracy as 0.8859423938479073
+	- we get Avg_TrainAccuracy: *0.950101* 
 
 - *For middle-high-german* with low resource:
 
-	- 
+	- we get Avg_TrainAccuracy: *0.949484*
 
 > In ipynb file, we have complete graph for Loss and Accuracy and all other important results.
