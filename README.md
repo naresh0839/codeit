@@ -1,10 +1,10 @@
 # Morphological Generation/Inflection
 
-A morpheme is the smallest meaningful word in a sentence or a phrase in any language. In well-spaced sentences, Morphological Analysis(MA) is the first step in Neuro-Linguistic Programming(NLP) in which a sentence is divided into a sequence of morphemes and then we determine parts of speech of the segmented morpheme. 	Morphological generation is just inverse of Morphological analysis. Morphlogical inflection Generation is the task of generating the inflected form of a given lemma corresponding to a particular lingusitic transformation. It is a mechnaism of word formation to express different grammatical categories such as tense, mood, voice, aspect, person, gender, number etc. Here, we are doing morphological generation/inflection for only single language at a time.
+> A morpheme is the smallest meaningful word in a sentence or a phrase in any language. In well-spaced sentences, Morphological Analysis(MA) is the first step in Neuro-Linguistic Programming(NLP) in which a sentence is divided into a sequence of morphemes and then we determine parts of speech of the segmented morpheme. 	Morphological generation is just inverse of Morphological analysis. Morphlogical inflection Generation is the task of generating the inflected form of a given lemma corresponding to a particular lingusitic transformation. It is a mechnaism of word formation to express different grammatical categories such as tense, mood, voice, aspect, person, gender, number etc. Here, we are doing morphological generation/inflection for only single language at a time.
 
 ## Motivation:
 
-To do Morphological generation for languages Hindi(high resource), Bengali(low resource), german(high resource) and middle-high-german(low resource). The aim of this project is to generate inflected word forms given the lemma and a morphological feature specification. An encoder-decoder model is used, modified by a custom trainer that trains only with the target language resources after aspecific threshold.
+> To do Morphological generation for languages Hindi(high resource), Bengali(low resource), german(high resource) and middle-high-german(low resource). The aim of this project is to generate inflected word forms given the lemma and a morphological feature specification. An encoder-decoder model is used, modified by a custom trainer that trains only with the target language resources after aspecific threshold.
 
 ## Tools Used:
 
@@ -27,7 +27,6 @@ To do Morphological generation for languages Hindi(high resource), Bengali(low r
 
 ## Folder Structure:
 
--> Main folder name: '19075047-Naresh-Kumar'
 - Main folder contain README.md, ipynb file and model ('saved.pt'), dataset folder that has dataset used for training testing of model and Loss_Accuracy.png which is graph image of loss accurcy of model.
 - In the ipynb file, we have two graphs of loss and accurcay, actual and prediction data and test accuracy.
 
@@ -37,16 +36,16 @@ To do Morphological generation for languages Hindi(high resource), Bengali(low r
 
 	- we get Avg_TrainAccuracy: 0.987051 and test accuracy as 0.9183067448762109 .
 
-- For Bengali with low resource :
+- *For Bengali* with low resource :
 
 	- We get Avg_TrainAccuracy: 0.952591 and test accuracy as 0.9208812886459944 .
 
-- For German with high resource:
+- *For German* with high resource:
 
 	- we get Avg_TrainAccuracy: 0.950101 and test accuracy as 0.8859423938479073
 
-- For middle-high-german with low resource:
+- *For middle-high-german* with low resource:
 
 	- 
 
-- In ipynb file , we have complete graph for Loss and Accuracy and all other important results
+> In ipynb file, we have complete graph for Loss and Accuracy and all other important results.
