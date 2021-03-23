@@ -27,7 +27,7 @@ To do Morphological generation for languages Hindi(high resource), Bengali(low r
 
 ## Folder Structure:
 
-- Main folder name: '19075047-Naresh-Kumar'
+-> Main folder name: '19075047-Naresh-Kumar'
 - Main folder contain README.md, ipynb file and model ('saved.pt'), dataset folder that has dataset used for training testing of model and Loss_Accuracy.png which is graph image of loss accurcy of model.
 - In the ipynb file, we have two graphs of loss and accurcay, actual and prediction data and test accuracy.
 
