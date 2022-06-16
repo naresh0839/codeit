@@ -1,9 +1,9 @@
 # Competitive Programming Profiles
 
-Codeforces - https://codeforces.com/profile/_pretender_
+Codeforces(Candidate Master) - https://codeforces.com/profile/_pretender_
 
-Codechef - https://www.codechef.com/users/naresh0839
+Codechef(6 Star) - https://www.codechef.com/users/naresh0839
 
-AtCoder - https://atcoder.jp/users/naresh0839
+AtCoder(Blue) - https://atcoder.jp/users/naresh0839
 
-Topcoder - https://www.topcoder.com/members/_pretender
+Topcoder(Yellow) - https://www.topcoder.com/members/_pretender
