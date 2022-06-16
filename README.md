@@ -1,4 +1,4 @@
-# Profile Links
+# Profile
 
 Codeforces - https://codeforces.com/profile/_pretender_
 
